@@ -7,7 +7,6 @@ import {Helmet} from "react-helmet";
 
 const QRdecoder=()=>{
 
-    const [profileInput, setProfileInput] = useState();
     const [image, setImage] = useState();
     const [disableBut, setDisableBut] = useState(1);
     const [text, setText] = useState();
@@ -37,7 +36,6 @@ const QRdecoder=()=>{
                 setData(reader.result);
             }
         
-        setProfileInput(e.target.files[0]);
         setImage(URL.createObjectURL(e.target.files[0]));
 
     }
