@@ -1,0 +1,111 @@
+
+
+.headings > h3{
+    font-size: 4rem;
+}
+
+.headings > p{
+    font-size: 1rem;
+}
+
+.form-short-link > input{
+    width:30rem;
+    padding:1rem;
+    border-radius:0.4rem; 
+    border:1px solid black;
+}
+
+.form-short-link > button{
+    width: 15rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(81, 110, 187);
+}
+
+.form-short-link >  button:hover{
+    background-color: rgb(74, 146, 209);
+}
+
+.recent-short-links{
+    width: 48rem;
+    border: none;
+    border-radius: 0.4rem;
+    height: 15rem;
+    background-color: rgba(216, 210, 210, 0.788);
+    margin: 1rem;
+    color: rgb(18, 19, 19);
+    overflow-y: auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+.recent-short-links> ul > li{
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+
+.recent-short-links .url{
+    margin: 1rem;
+    max-width: 400px;
+    font-size: 0.9rem;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+.recent-short-links  button{
+    width: 5rem;
+    border: none;
+    color: rgb(233, 255, 255);
+    padding: 0.3em;
+    background-color: rgb(145, 148, 150);
+
+    margin: 1rem;
+}
+
+select{
+    padding: 1rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .recent-short-links{
+        width: 28rem;
+        border: none;
+        border-radius: 0.4rem;
+        height: 15rem;
+        background-color: rgba(216, 210, 210, 0.788);
+        margin: 1rem;
+        color: rgb(18, 19, 19);
+        overflow-y: auto;
+    }
+
+    .short-url{
+        margin: 1rem;
+    }
+    
+    .recent-short-links  button{
+        width: 5rem;
+        border: none;
+        color: rgb(233, 255, 255);
+        padding: 0.3em;
+        background-color: rgb(145, 148, 150);
+    
+        margin: 1rem;
+    }
+  
+}
