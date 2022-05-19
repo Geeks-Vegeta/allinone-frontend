@@ -21,7 +21,7 @@ const Navs=()=>{
         <>
         <Routes>
             <Route exact path="/" element={<Home/>}/>
-            <Route path="/image" element={<Image/>}/>
+            <Route  path="/image" element={<Image/>}/>
             <Route path="/iconconvert" element={<IconConverter/>}/>
             <Route path="/resize" element={<ResizeImage/>}/>
             <Route path="/jpegtojpg" element={<JpegToJpg/>}/>
