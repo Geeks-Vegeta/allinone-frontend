@@ -57,7 +57,7 @@ const ResizeImage=()=>{
             const convert = await axios(
                 {
                     method:"post",
-                    url:`https://allinoneapis.herokuapp.com/resizeimage?width=${width}&height=${height}`,
+                    url:`https://aio-4l6a.onrender.com/resizeimage?width=${width}&height=${height}`,
                     data:data
                 }
             )

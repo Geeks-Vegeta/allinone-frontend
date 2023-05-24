@@ -49,7 +49,7 @@ const QRdecoder=()=>{
             axios(
                 {
                     method:'post', 
-                    url:`https://allinoneapis.herokuapp.com/qrdecode`,
+                    url:`https://aio-4l6a.onrender.com/qrdecode`,
                     data: data,
                     headers: { "Content-Type": `image/*`, }
                 }).then((data)=>{

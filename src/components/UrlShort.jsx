@@ -9,7 +9,7 @@ import {Helmet} from "react-helmet";
 const UrlShort=()=>{
 
     const [url, setUrl] = useState();
-    const [selectShortUrl, setSelectShortUrl] = useState("chilpit");
+    const [selectShortUrl, setSelectShortUrl] = useState("tinyurl");
     const [allLinks, setAllLinks] = useState([]);
 
     useEffect(()=>{
@@ -32,7 +32,7 @@ const UrlShort=()=>{
    
     const createShortLink=async(e)=>{
         e.preventDefault();
-        const {data} = await axios.post(`https://allinoneapis.herokuapp.com/shortlink?mode=${selectShortUrl}&link=${url}`);
+        const {data} = await axios.post(`https://aio-4l6a.onrender.com/shortlink?mode=${selectShortUrl}&link=${url}`);
         const create_link={
             "url":url,
             "short":data.url
@@ -72,10 +72,8 @@ const UrlShort=()=>{
                     <input value={url} onChange={(e)=>setUrl(e.target.value)} placeholder="Shorten Your Link" type="url" name="" id="" required="true"/>
                         <select value={selectShortUrl} onChange={(e)=>setSelectShortUrl(e.target.value)} className="m-2" name="links" id="links">
                             <option value="tinyurl">tinyurl</option>
-                            <option value="chilpit">chilpit</option>
                             <option value="osdb">osdb</option>
                             <option value="clckru">clckru</option>
-                            <option value="dagd">dagd</option>
                         </select>
 
                     <button type="submit">Shorten</button>

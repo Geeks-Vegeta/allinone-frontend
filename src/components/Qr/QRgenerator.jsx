@@ -17,7 +17,7 @@ const QRgenerator=()=>{
         try {
             setDisableBut(1);
             const config = { responseType: 'blob' }
-            const data = await axios.post(`https://allinoneapis.herokuapp.com/qrcreation?code=${text}`, config);
+            const data = await axios.post(`https://aio-4l6a.onrender.com/qrcreation?code=${text}`, config);
             let image = 'data:image/png;base64,' + data.data;
             var a = document.createElement("a"); //Create <a>
             a.href = image; //Image Base64 Goes here

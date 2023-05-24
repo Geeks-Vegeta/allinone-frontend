@@ -54,7 +54,7 @@ const IconConverter=()=>{
             const convert = await axios(
                 {
                     method:"post",
-                    url:"https://allinoneapis.herokuapp.com/ico",
+                    url:"https://aio-4l6a.onrender.com/ico",
                     data:data
                 }
             )

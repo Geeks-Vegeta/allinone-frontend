@@ -55,7 +55,7 @@ const JpegToPng=()=>{
             const convert = await axios(
                 {
                     method:"post",
-                    url:"https://allinoneapis.herokuapp.com/jpegtopng",
+                    url:"https://aio-4l6a.onrender.com/jpegtopng",
                     data:data
                 }
             )

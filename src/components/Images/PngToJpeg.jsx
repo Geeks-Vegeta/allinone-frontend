@@ -55,11 +55,10 @@ const PngToJpeg=()=>{
             const convert = await axios(
                 {
                     method:"post",
-                    url:"https://allinoneapis.herokuapp.com/pngtojpeg",
+                    url:"https://aio-4l6a.onrender.com/pngtojpeg",
                     data:data
                 }
             )
-            console.log(convert);
             let image = 'data:image/x-icon;base64,' + convert.data;
             var a = document.createElement("a"); //Create <a>
             a.href = image; //Image Base64 Goes here
